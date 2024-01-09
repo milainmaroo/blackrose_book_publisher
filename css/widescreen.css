@@ -1,0 +1,18 @@
+/* Laptop or Desktop: Landscape */
+
+
+@media only screen and (min-width: 1101px) and (max-width: 1600px) {
+    /* Home Page */
+    #navbar .logo {
+        width: 20rem;
+    }
+
+    #showcase .showcase-container {
+        top: 78px;
+      }
+}
+
+
+
+
+

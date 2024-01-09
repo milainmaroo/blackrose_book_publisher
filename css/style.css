@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+.container {
+  padding: 1rem 1rem;
+  margin: 0 1rem;
+}
+
+.large-heading {
+  font-size: 3.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.medium-heading {
+  text-align: center;
+}
+
+.lead-paragraph {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.main-button {
+  display: inline-block;
+  color: #fff;
+  background: #cc6803;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0.35rem;
+}
+
+.subscribe-button {
+  height: 1.875rem;;
+  background: #cc6803;
+  border: none;
+  padding: 0 1.25rem;
+  color: #fff;
+}
+
+.link, .logo-text {
+  color: #cc6803;
+  font-weight: bold;
+}
+
+.book-title {
+  font-style: italic;
+}
+
+.small-text {
+  font-size: 0.9rem;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #404042;
+  justify-content: space-between;
+  padding: 0.4rem 1rem;
+  z-index: 1;
+}
+
+#navbar .logo {
+  width: 20rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.65rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: #cc6803;
+  border-radius: 0.35rem;
+}
+
+/* Showcase */
+#showcase {
+  background: url('../images/books.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* Overlay Effect */
+  position: absolute;
+  top: 78px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* Newsletter */
+#newsletter {
+  color: #fff;
+  background: #404042;
+}
+
+#newsletter .newsletter-container {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#newsletter .newsletter-container input[type="email"] {
+  padding: 0.25rem;
+  height: 1.875rem;
+  width: 15.625rem;
+}
+
+/* Bestsellers */
+#bestsellers {
+  background: #e8e2dd;
+  color: #3e352f;
+}
+
+#bestsellers .bestseller-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+
+#bestsellers .bestseller-container img {
+  height: 12.5rem;
+  width: 9.4rem;;
+  padding: 0.5rem;
+}
+
+#bestsellers .bestseller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Articles */
+#articles {
+  background: #c5c0bc;
+  color: #3e352f;
+}
+
+#articles .articles-container img {
+  height: 200px;
+  width: 320px;
+  margin-bottom: 5px;
+}
+
+#articles .articles-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#articles .articles-container .article {
+  margin: 1rem 1.7rem;
+  text-align: center;
+}
+
+/* About Us */
+#about {
+  background: url("../images/office.jpg") no-repeat center center/cover;
+  color: #3e352f;
+}
+
+#about .page-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 1rem;
+}
+
+#about .page-container > *:first-child {
+  grid-row: 1 / span 2;
+}
+
+#about .about-org {
+  background-color: rgba(197, 192, 188, 0.8);
+  padding: 1.5rem;
+}
+
+#about .join {
+  background: #404042;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+#about .join p {
+  margin-bottom: 1.25rem;
+}
+
+/* Mission */
+#mission {
+  text-align: center;
+  background: #404042;
+  color: #e8e2dd;
+}
+
+/* Values */
+#value {
+  background: #e8e2dd;
+  color: #3e352f;
+}
+
+#value .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#value .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+#value .items .item i {
+  background: #cc6803;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Offices */
+#offices {
+  background: #cc6803;
+  color: #fff;
+}
+
+#offices .locations-container {
+  display: flex;
+  padding: 1rem 2rem;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#offices .locations-container .location {
+  padding: 2.5rem;
+  background: #e8e2dd;
+  color: #3e352f;
+  font-weight: bold;
+  border-radius: 0.45rem;
+} 
+
+/* Authors */
+#authors {
+  background: url("../images/authors.jpg") no-repeat center center/cover;
+  color: #fff;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: #e8e2dd;
+  color: #3e352f;
+  margin: 1rem 0;
+  border-radius: 0.35rem;
+}
+
+.testimonial-container .testimonial {
+  padding: 1.5rem;
+}
+
+/* Individual Author Section */
+#author {
+  background:  url("../images/book.jpg") no-repeat center center/cover;
+}
+
+.author-image {
+  width: 10.625rem;
+  height: 10.625rem;
+  border-radius: 50%;
+}
+
+/* Books */
+.books {
+  border-radius: 0.35rem;
+}
+
+.books .book-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.35rem;
+}
+
+.books .book-container img {
+  height: 8.8rem;
+  width: 7rem;
+}
+
+.book-1, .book-3 {
+  background: #404042;
+  color: #fff;
+}
+
+.book-2, .book-4 {
+  background: #e8e2dd;
+  color: #3e352f;
+}
+
+.books .book-container p {
+  margin: 1.5rem;
+}
+
+/* Refernces */
+#references {
+  background: #cc6803;
+} 
+
+#references h4 {
+  padding: 0.5rem 0 0.3rem 0;
+}
+
+#references .reference-container a {
+  font-size: 0.9rem;
+}
+
+.intro-container, .reference-container {
+  background: #e8e2dd;
+  color: #3e352f;
+  padding: 1rem;
+  border-radius: 0.35rem;
+}
+
+.intro-container {
+  margin-bottom: 1.5rem;
+}
+
+
+/* Footer */
+#main-footer {
+  text-align: center;
+  background: #404042;
+  color: #fff;
+  padding: 0.5rem;
+}

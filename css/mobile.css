@@ -1,0 +1,143 @@
+/* For Mobile Phones */
+@media only screen and (min-width: 320px) and (max-width: 750px) {
+  /* Home Page */
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar .logo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  #navbar ul {
+    padding: 0.5rem;
+  }
+
+  #showcase .showcase-container {
+    top: 124px;
+  }
+
+  .large-heading {
+    font-size: 3rem;
+  }
+
+  .lead-paragraph {
+    font-size: 0.8rem;
+  }
+
+  #newsletter .newsletter-container {
+    flex-direction: column;
+  }
+
+  #newsletter .newsletter-container h1 {
+    padding-bottom: 0.5rem;
+  }
+
+  #newsletter .newsletter-container button[type="submit"] {
+    padding: 0.25rem;
+    height: 1.875rem;
+    width: 15.625rem;
+    margin-top: 0.3rem;
+  }
+
+  #bestsellers h2 {
+    text-align: center;
+  }
+
+  #bestsellers .bestseller-container {
+    flex-wrap: wrap;
+  }
+
+  #bestsellers .bestseller-container img {
+    height: 200px;
+    width: 150px;
+    margin: 0.5rem;
+  }
+
+  #bestsellers .bestseller-container img:last-child {
+    display: none;
+  }
+
+  #articles .articles-container img {
+    height: 10.65rem;
+    width: 16.85rem;
+  }
+
+  #articles h2 {
+    text-align: center;
+  }
+
+  #articles .articles-container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  #articles .articles-container .article {
+    margin: 0.5rem 0;
+  }
+
+  /* About Page */
+  #about .page-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #about .page-container > *:first-child {
+    grid-row: 1;
+  }
+
+  #value .items {
+    display: block;
+    padding: 1rem;
+  }
+
+  #value .items .item {
+    display: flex;
+    text-align: left;
+  } 
+
+  #value .items .item i {
+    margin-right: 1rem;
+    align-self: center;
+  }
+
+  #offices .locations-container {
+    flex-wrap: wrap;
+  }
+
+  #offices .locations-container .location {
+    margin-bottom: 1rem;
+  }
+
+  /* Authors Page */
+  .testimonial-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Individual Author Page */
+  .books .book-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* References */
+  /* #references .reference-container a {
+    display: inline-block;
+  } */
+}
+
+/* For iPhone 5/SE */
+@media(max-height: 568px) {
+  /* Home Page */
+  .lead-paragraph {
+    font-size: 0.9rem;
+  }
+
+  /* About Page */
+  #value .items .item i {
+    margin-right: 0.5rem;
+  }
+}

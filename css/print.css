@@ -1,0 +1,103 @@
+/* Print */
+
+@page {
+  size: portrait;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust:exact;
+    font-family: serif;
+  }
+
+  .page-break {
+    page-break-after: always;
+    /* page-break-inside: avoid; */
+  }
+
+  .link {
+    display: none;
+  }
+
+
+  /* Home Page */
+  #navbar {
+    display: none;
+  }
+
+  #showcase .showcase-container {
+    top: 0px;
+  }
+
+  .lead-paragraph {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .main-button {
+    display: none;
+  }
+
+  #newsletter {
+    display: none;
+  }
+
+  #bestsellers .bestseller a {
+    display: none;
+  }
+
+  #articles .articles-container img {
+    height: 10rem;
+    width: 16.85rem;
+  }
+
+  #articles h2 {
+    text-align: center;
+  }
+
+  #articles .articles-container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  #articles .articles-container .article {
+    margin: 0;
+  }
+  
+  /* About Page */
+  #about .page-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #about .page-container > *:first-child {
+    grid-row: 1;
+  }
+
+  #offices .locations-container {
+    flex-wrap: wrap;
+  }
+
+  #offices .locations-container .location {
+    margin-bottom: 1rem;
+  } 
+
+  /* Authors Page */
+  #authors {
+    background: none;
+  }
+
+  /* Individual Author Page */
+  #author {
+    background: none;
+  }
+
+  #author .testimonial-container .testimonial {
+    padding: 0.5rem;
+  }
+
+  #main-footer {
+    display: none;
+  }
+}
+
